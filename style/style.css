@@ -1,0 +1,71 @@
+body {
+    background: rgb(255, 255, 255);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.music-player-container {
+    border: 1px solid #898989;
+    width: 300px;
+    height: 500px;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.music-player-container > .song-thumbnail {
+    text-align: center;
+}
+
+.music-player-container > .song-thumbnail > img {
+    width: 90%;
+    margin: auto;
+    margin-top: 15px;
+}
+
+.song-details-section > span {
+    display: block;
+    color: #343435;
+}
+
+.song-details-section > .song-name {
+    font-size: 0.95rem;
+}
+
+.song-details-section > .song-album {
+    font-size: 0.75rem;    
+}
+
+.music-player-container > .player-controls > .progressbar {
+    margin: auto;
+    width: 90%;
+    height: 5px;
+    margin-top: 5px;
+    border: 1px solid #898989;
+}
+
+.music-player-container > .player-controls > .control-section {
+    margin: auto;
+    width: 90%;
+    height: 80px;
+    margin-top: 25px;
+    text-align: center;
+}
+
+.music-player-container > .player-controls > .control-section > .control-btn {
+    margin: auto;
+    width: 50px;
+    height: 50px;
+    border: 1px solid #898989;
+    border-radius: 50%;
+    background: #F0F0F0;
+}
+
+.music-player-container > .player-controls > .control-section > .play-pause-btn {
+    width: 75px;
+    height: 75px;
+}
+
+.music-player-container > .player-controls > .progressbar > .progress-bar-loading {
+    width: 90%;
+    height: 5px;
+    background: #898989;
+} 
