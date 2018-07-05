@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Music Player</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./style/style.css">
 </head>
 <body>
@@ -23,16 +24,24 @@
         <div class="player-controls">
             <div class="progressbar">
                 <div class="progress-bar-loading"></div>
+                <div class="loaded-time">00:00</div>
+                <div class="remaining-time">00:00</div>
             </div>            
             <div class="control-section">
-                <button class="control-btn previous-btn"></button>
-                <button class="control-btn play-pause-btn"></button>
-                <button class="control-btn next-btn"></button>
+                <button class="control-btn previous-btn">
+                    <i class="fa fa-step-backward"></i>
+                </button>
+                <button class="control-btn play-pause-btn">
+                    <i class="fa fa-play"></i>
+                </button>
+                <button class="control-btn next-btn">
+                    <i class="fa fa-step-forward"></i>
+                </button>
             </div>
         </div>
     </div>
-    <button id=play >Play</button>
-    <button id=pause >Pause</button>
+
+
     <script src="js/index.js"></script>
 </body>
 </html>

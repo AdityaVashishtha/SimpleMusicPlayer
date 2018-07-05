@@ -1,10 +1,27 @@
+:root {
+    --background-color: #9900ff;
+    --accent-color: #ff0077;
+    --light-gray: #EFEFEF;
+    --medium-gray: #898989;
+    --dark-gray: #323232;
+    --very-dark-color: #121212;
+    --light-color: #FEFEFE;
+    --backgroud-gradient-shade: linear-gradient(
+        0deg,
+        #ff0077,
+        #9900ff
+    );
+}
+
 body {
-    background: rgb(255, 255, 255);
+    background: var(--backgroud-gradient-shade) fixed;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .music-player-container {
-    border: 1px solid #898989;
+    background: var(--background-color);
+    box-sizing: border-box;
+    box-shadow: 0 0 15px 15px rgba(0,0,0,0.05);
     width: 300px;
     height: 500px;
     margin: auto;
@@ -23,7 +40,7 @@ body {
 
 .song-details-section > span {
     display: block;
-    color: #343435;
+    color: var(--light-gray);
 }
 
 .song-details-section > .song-name {
@@ -35,11 +52,13 @@ body {
 }
 
 .music-player-container > .player-controls > .progressbar {
+    position: relative;
     margin: auto;
     width: 90%;
     height: 5px;
-    margin-top: 5px;
-    border: 1px solid #898989;
+    margin-top: 25px;
+    border: 1px solid var(--light-color);
+    border-radius: 5px; 
 }
 
 .music-player-container > .player-controls > .control-section {
@@ -54,18 +73,44 @@ body {
     margin: auto;
     width: 50px;
     height: 50px;
-    border: 1px solid #898989;
+    border: 2px solid var(--light-color);
     border-radius: 50%;
-    background: #F0F0F0;
+    background: transparent;
+    color: var(--light-color);
+    text-align: center;
+    outline: none;
 }
 
 .music-player-container > .player-controls > .control-section > .play-pause-btn {
     width: 75px;
     height: 75px;
+    font-size: 1.65rem;
+    outline: none;
+}
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+    border: 0;
+    padding: 0;
 }
 
 .music-player-container > .player-controls > .progressbar > .progress-bar-loading {
-    width: 90%;
+    width: 0%;
     height: 5px;
-    background: #898989;
+    background: var(--light-color);
 } 
+
+.music-player-container > .player-controls > .progressbar > .loaded-time {
+    position: absolute;
+    margin-top: 5px;
+    font-size: 0.65rem;
+    color: var(--light-color);
+}
+
+.music-player-container > .player-controls > .progressbar > .remaining-time {
+    position: absolute;
+    margin-top: 5px;
+    right: 0;
+    font-size: 0.65rem;
+    color: var(--light-color);
+}
