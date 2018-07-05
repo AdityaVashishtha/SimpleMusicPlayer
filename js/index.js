@@ -56,3 +56,7 @@ togglePlayPauseBtn = ()=>{
         playPauseButton.innerHTML = "<i class='fa fa-pause'></i>";
     }
 }
+
+volumeChange = (e)=> {
+    song.volume = e.value/100;
+}

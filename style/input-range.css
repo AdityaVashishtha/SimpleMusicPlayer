@@ -1,0 +1,99 @@
+:root {
+    --thumb-color: rgb(255, 255, 255);
+    --track-color: transparent;
+    --track-progress-color: rgb(255, 255, 255);
+    --thumb-border-color: rgb(255, 255, 255);
+    --track-border-param: 1px solid rgb(255, 255, 255);
+    --border-thumb-param: 0px solid yellow;
+    --thumb-height: 15px;
+    --thumb-width: 15px;
+}
+/* input range slider styling start */
+
+input[type=range] {
+    -webkit-appearance: none;
+    margin: 0px;
+    width: 90%;
+}
+
+input[type=range]:focus {
+    outline: none;
+}
+input[type=range]::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 4px;
+    cursor: pointer;
+    background: var(--track-color);
+    border: var(--track-border-param);
+    border-radius: 3px;
+}
+input[type=range]::-webkit-slider-thumb {
+    height: var(--thumb-height);
+    width: var(--thumb-width);
+    border: var(--border-thumb-param);
+    border-radius: 50%;
+    background: var(--thumb-color);
+    cursor: pointer;
+    -webkit-appearance: none;
+    margin-top: -14px;
+}
+input[type=range]:focus::-webkit-slider-runnable-track {
+    background: var(--thumb-color);
+}
+input[type=range]::-moz-range-track {
+    width: 100%;
+    height: 4px;
+    cursor: pointer;
+    background: var(--track-color);
+    border: var(--track-border-param);
+    border-radius: 3px;
+}
+input[type=range]::-moz-range-progress {
+    height: 4px;
+    background: var(--track-progress-color);
+}
+input[type=range]::-moz-range-thumb {
+    height: var(--thumb-height);
+    width: var(--thumb-width);
+    border: var(--border-thumb-param);
+    border-radius: 50%;
+    background: var(--thumb-color);
+    cursor: pointer;
+}
+input[type=range]::-ms-track {
+    width: 100%;
+    height: 8.4px;
+    cursor: pointer;
+    animate: 0.2s;
+    background: transparent;
+    border-color: transparent;
+    border-width: 16px 0;
+    color: transparent;
+}
+input[type=range]::-ms-fill-lower {
+    background: var(--track-color);
+    border: var(--track-border-param);
+    border-radius: 2.6px;
+    /* box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d; */
+}
+input[type=range]::-ms-fill-upper {
+    background: var(--track-color);
+    border: var(--track-border-param);
+    border-radius: 2.6px;
+}
+input[type=range]::-ms-thumb {
+    border: var(--border-thumb-param);
+    height: var(--thumb-height);
+    width: var(--thumb-width);
+    border-radius: 3px;
+    background: var(--thumb-color);
+    cursor: pointer;
+}
+input[type=range]:focus::-ms-fill-lower {
+    background: var(--track-color);
+}
+input[type=range]:focus::-ms-fill-upper {
+    background: var(--track-color);
+}
+
+/* input range slider styling end */

@@ -7,6 +7,7 @@
     <title>Music Player</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./style/input-range.css">
 </head>
 <body>
     <div class="music-player-container">
@@ -37,6 +38,10 @@
                 <button class="control-btn next-btn">
                     <i class="fa fa-step-forward"></i>
                 </button>
+                <div class="volume-control">
+                    <i class="fa fa-volume-up"></i>
+                    <input type="range" onchange="volumeChange(this)" name="volume">
+                </div>
             </div>
         </div>
     </div>

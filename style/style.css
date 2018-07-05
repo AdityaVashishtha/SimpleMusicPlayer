@@ -1,6 +1,6 @@
 :root {
-    --background-color: #9900ff;
-    --accent-color: #ff0077;
+    --background-color: #c8ceff;
+    --accent-color: #474e8f;
     --light-gray: #EFEFEF;
     --medium-gray: #898989;
     --dark-gray: #323232;
@@ -14,14 +14,14 @@
 }
 
 body {
-    background: var(--backgroud-gradient-shade) fixed;
+    background: var(--background-color);
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .music-player-container {
-    background: var(--background-color);
+    background: var(--accent-color);
     box-sizing: border-box;
-    box-shadow: 0 0 15px 15px rgba(0,0,0,0.05);
+    box-shadow: 0 0 15px 15px rgba(0,0,0,0.1);
     width: 300px;
     height: 500px;
     margin: auto;
@@ -113,4 +113,20 @@ input::-moz-focus-inner {
     right: 0;
     font-size: 0.65rem;
     color: var(--light-color);
+}
+
+.volume-control {
+    position: relative;
+    width: 60%;
+    margin: auto;
+    padding: 0;
+    padding-top: 15px;
+    height: 10;
+    color: var(--light-color);
+}
+
+.volume-control > i {
+    position: absolute;
+    top: 17px;
+    left: -15px;
 }
