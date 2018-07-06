@@ -1,6 +1,7 @@
 :root {
-    --thumb-color: rgb(255, 255, 255);
+    --thumb-color: transparent;
     --track-color: transparent;
+    --thumb-hover-color: rgb(60, 255, 0);
     --track-progress-color: rgb(255, 255, 255);
     --thumb-border-color: rgb(255, 255, 255);
     --track-border-param: 1px solid rgb(255, 255, 255);
@@ -59,6 +60,9 @@ input[type=range]::-moz-range-thumb {
     border-radius: 50%;
     background: var(--thumb-color);
     cursor: pointer;
+}
+input[type=range]:hover::-moz-range-thumb {
+    background: var(--thumb-hover-color);
 }
 input[type=range]::-ms-track {
     width: 100%;
